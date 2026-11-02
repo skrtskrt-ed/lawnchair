@@ -126,7 +126,7 @@ public interface WorkspaceLayoutManager {
                                 prefs.getEnableLabelInDock()));
             }
         } else {
-            // Show folder title if not in the hotseat, unless folder names are hidden
+            // Show folder title if not in the hotseat, unless folder labels are hidden
             if (child instanceof FolderIcon) {
                 PreferenceManager2 prefs = PreferenceManager2.getInstance(child.getContext());
                 ((FolderIcon) child).setTextVisible(
